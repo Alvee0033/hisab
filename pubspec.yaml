@@ -1,0 +1,55 @@
+name: expense_pro
+description: A professional expense tracker application.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.0.5
+
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.0
+
+  # UI & Charts
+  fl_chart: ^0.63.0
+  google_fonts: ^5.1.0
+  intl: ^0.19.0
+  
+  # Firebase (Commented out placeholders as setup requires platform specific config)
+  # firebase_core: ^2.15.1
+  # firebase_auth: ^4.9.0
+  # cloud_firestore: ^4.9.1
+
+  # Utilities
+  uuid: ^3.0.7
+  path_provider: ^2.1.0
+  image_picker: ^1.0.4
+  flutter_local_notifications: ^17.0.0
+  
+  # PDF
+  pdf: ^3.10.4
+  syncfusion_flutter_pdf: ^29.1.38
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.6
+
+flutter:
+  uses-material-design: true
+  generate: true # For localization
+
+  assets:
+    - assets/images/
